@@ -4,8 +4,7 @@ import './style.css'
 
 const Background = () => {
   return (
-    <div>
-      bg
+    <div className='bg'>
     </div>
   )
 }
