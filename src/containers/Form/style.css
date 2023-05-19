@@ -1,6 +1,77 @@
 .form-wrapper{
   background-color: white;
   color: var(--color-gray1);
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 1px 15px var(--color-gray1);
+}
+
+.form-wrapper nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--color-gray3);
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
+  color: var(--color-gray2)
+}
+
+.form-wrapper .form-wrapper--nav-step{
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-wrapper--nav-step .currStep-bg{
+  background: linear-gradient(-90deg, var(--color-primary), var(--color-secondary));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 100px;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.form-wrapper--nav-step__current .currStep-bg{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.form-wrapper--nav-step:first-child .currStep-bg{
+  border-radius: 0 100px 100px 0;
+}
+
+.form-wrapper--nav-step:last-child .currStep-bg {
+  border-radius: 100px 0 0 100px;
+}
+
+.form-wrapper .form-wrapper--nav-step--content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  gap: 20px;
+}
+
+.form-wrapper .form-wrapper--nav-step--content .currStep-number{
+  width: 25px;
+  height: 25px;
+  line-height: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--color-gray2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper .form-wrapper--nav-step__current .currStep-number{
+  background-color: white;
+  color: var(--color-secondary)
+}
+
+.form-wrapper--nav-step__current .form-wrapper--nav-step--content{
+  color: white;
 }

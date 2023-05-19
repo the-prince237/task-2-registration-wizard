@@ -15,7 +15,7 @@ const Step = () => {
   return (
     <div className='step'>
       <div className="step--header">
-        <p>Step {currentStep + 1}</p>
+        <h2>Step {currentStep + 1}</h2>
         <h1>{steps[currentStep].title}</h1>
         <h3>{steps[currentStep].description}</h3>
       </div>
