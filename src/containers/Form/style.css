@@ -1,0 +1,6 @@
+.form-wrapper{
+  background-color: white;
+  color: var(--color-gray1);
+  border-radius: 10px;
+  box-shadow: 0 1px 15px var(--color-gray1);
+}

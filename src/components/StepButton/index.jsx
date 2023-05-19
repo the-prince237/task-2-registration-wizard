@@ -2,11 +2,11 @@ import React from 'react'
 
 import './style.css'
 
-const StepButton = () => {
+const StepButton = ({text, type, handleClick}) => {
   return (
-    <div>
-      StepButton
-    </div>
+    <button onClick={handleClick}>
+      {text}
+    </button>
   )
 }
 
