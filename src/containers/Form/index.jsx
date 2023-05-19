@@ -4,7 +4,7 @@ import './style.css'
 
 const Form = () => {
   return (
-    <div>
+    <div className='section'>
       Form
     </div>
   )

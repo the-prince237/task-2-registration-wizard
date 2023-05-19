@@ -10,7 +10,7 @@ function App() {
       <div className='App-content'>
         <Header />
         <Form />
-        <footer>
+        <footer className='section'>
           <StepButton />
           <StepButton />
         </footer>
