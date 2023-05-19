@@ -1,0 +1,20 @@
+footer{
+  width: 100%;
+}
+
+footer, footer a, footer nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  gap: 15px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+footer nav{
+  gap: 20px;
+}

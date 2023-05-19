@@ -1,0 +1,22 @@
+.step-btn{
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  border-radius: 7px;
+  border: solid 1px var(--color-purple2)
+}
+
+.step-btn svg{
+  font-size: 13px;
+}
+
+.step-btn__next{
+  background: linear-gradient(-90deg, var(--color-purple1), var(--color-purple2));
+}
+
+.step-btn__prev{
+  color: var(--color-purple2);
+}
