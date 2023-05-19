@@ -3,7 +3,23 @@ import React, { useState, createContext } from 'react'
 export const FormContext = createContext()
 
 export const FormProvider = ({ children }) => {
-  const [datas, setDatas] = useState()
+  const [datas, setDatas] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    password: "",
+    confirmPassword: "",
+    brandName: "",
+    brandType: "",
+    streetAddress: "",
+    city: "",
+    zipCode: "",
+    taxIdNumber: "",
+    doc1: "",
+    doc2: "",
+    doc3: ""
+  })
   const [currentStep, setCurrentStep] = useState(0)
 
   function goToNextStep() {

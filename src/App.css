@@ -12,17 +12,17 @@
 
 .App-content{
   width: 100vw;
-  height: 100vh;
-  position: absolute;
+  min-height: 100vh;
   top: 0;
   left: 0;
-  /* background-color: rgba(0, 0, 0, 0.212);
-  backdrop-filter: blur(5px); */
+  background-color: rgba(0, 0, 0, 0.212);
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 100px 70px;
+  justify-content: flex-start;
+  padding: 20px 150px;
+  gap: 60px;
 }
 
 .App-content .section{

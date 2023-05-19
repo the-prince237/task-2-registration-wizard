@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react'
+import React, { useContext, useEffect, useState }  from 'react'
 import { FormContext } from '../../context'
 
 import Step from '../Step'
@@ -9,10 +9,19 @@ import './style.css'
 
 const Form = () => {
   const { goToStep, currentStep } = useContext(FormContext)
+  
+  const [scrolled, setScrolled] = useState(false)
+
+  //scroll event
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 120 ? setScrolled(true) : setScrolled(false)
+    })
+  })
 
   return (
     <div className='section form-wrapper'>
-      <nav>
+      <nav className={`nav ${scrolled && "scrolled-nav"}`}>
         {steps.map(({ name, label }, index) => (
           <div
             onClick={() => goToStep(index)}
@@ -22,7 +31,7 @@ const Form = () => {
             <div className='currStep-bg'></div>
             <div className="form-wrapper--nav-step--content">
               <div className='currStep-number'>{index+1}</div>
-              <h2> {label}</h2>
+              <h2>{label}</h2>
             </div>
           </div>
         ))}

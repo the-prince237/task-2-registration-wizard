@@ -56,6 +56,11 @@ input, textarea{
   font-family: inherit;
 }
 
+input:focus,
+textarea:focus{
+  outline: none;
+}
+
 svg {
   font-size: inherit;
   color: inherit;
@@ -87,7 +92,8 @@ h3{
 }
 
 p, button{
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 800px) {
