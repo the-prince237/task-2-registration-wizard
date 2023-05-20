@@ -9,6 +9,7 @@ export function checkFields(object) {
     ) {
       result = false;
     }
+    return result
   })
   
   console.log({object})

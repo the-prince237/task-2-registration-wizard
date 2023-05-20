@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { SlArrowRight } from 'react-icons/sl'
 import { FormContext } from '../../context'
 
