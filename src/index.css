@@ -96,10 +96,71 @@ p, button{
   font-weight: 500;
 }
 
-@media screen and (max-width: 800px) {
- 
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 24px;
+  }
+  
+  header h1 {
+    font-size: 21px
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p,
+  button, input, textarea {
+    font-size: 12px;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  
+@media screen and (max-width: 1150px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  header h1 {
+    font-size: 17px
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  p,
+  button, input, textarea {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 15px
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 11px;
+  }
+
+  p,
+  button, input, textarea {
+    font-size: 11px;
+  }
 }

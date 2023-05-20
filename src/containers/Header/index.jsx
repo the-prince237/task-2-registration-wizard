@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdPhone } from 'react-icons/md'
 import { Logo } from '../../components'
 
 import './style.css'
@@ -8,7 +9,7 @@ const Header = () => {
     <header className='section'>
       <Logo />
       <h1>Create New Account</h1>
-      <button>Contact Us</button>
+      <button><MdPhone /><span>Contact Us</span></button>
     </header>
   )
 }

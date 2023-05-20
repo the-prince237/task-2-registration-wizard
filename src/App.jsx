@@ -1,5 +1,3 @@
-import { useContext } from 'react';
-
 import { Background, Footer, Form, Header } from './containers'
 
 import './App.css';

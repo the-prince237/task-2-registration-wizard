@@ -4,6 +4,26 @@ header{
   align-items: center;
 }
 
-header h1{
-  font-size: 28px
+header button{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+header button svg{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 550px) {
+  header button span{
+    display: none;
+  }
+
+  header button svg {
+    font-size: 1.5rem;
+  }
 }

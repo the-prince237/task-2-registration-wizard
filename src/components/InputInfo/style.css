@@ -1,0 +1,100 @@
+.input-info{
+  display: flex;
+  position: relative;
+}
+
+.input-info .input-info--qm{
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-info div{
+  position: absolute;
+  background-color: var(--color-gray1);
+  backdrop-filter: blur(5px);
+  color: white;
+  width: 300px;
+  left: 40px;
+  top: -15px;
+  padding: 15px 25px;
+  text-align: left;
+  border-radius: 10px;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.input-info:hover div{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.input-info div span{
+  display: block;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -14px;
+  color: var(--color-gray1);
+}
+
+@media screen and (max-width: 1200px) {
+  .input-info{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-info div{
+    left: -50px;
+    top: 200%;
+  }
+  
+  .input-info div span {
+    transform: rotate(0);
+    top: -14px;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .input-info div {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .input-info div {
+    left: px;
+    top: -14px;
+    width: 300px;
+  }
+  
+  .input-info div span {
+    transform: rotate(-90deg);
+    top: unset;
+    left: -14px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .input-info div {
+    width: 250px;
+    left: -50px;
+    top: 200%;
+  }
+  
+  .input-info div span {
+    transform: rotate(0);
+    top: -14px;
+    left: 50px;
+  }
+}

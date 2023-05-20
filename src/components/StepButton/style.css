@@ -20,3 +20,13 @@
 .step-btn__prev{
   color: var(--color-purple2);
 }
+
+@media screen and (max-width: 600px) {
+  .step-btn{
+    padding: 10px 10px;
+  }
+
+  .step-btn p{
+    display: none;
+  }
+}

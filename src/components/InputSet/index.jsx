@@ -1,4 +1,5 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
+import { SlArrowRight } from 'react-icons/sl'
 import { FormContext } from '../../context'
 
 import InputInfo from '../InputInfo'
@@ -16,14 +17,21 @@ const InputSet = ({
   message
 }) => {
 
-  const { datas, handleChange } = useContext(FormContext)
+  const { handleChange } = useContext(FormContext)
+  const [fileName, setFileName] = useState("")
+  
+  function changeFile(e) {
+    const _file = e.target.files[0]
+    setFileName(_file.name)
+    handleChange({target: {name, value: fileName}})
+  }
 
   return (
     <div className='input-set'>
       <div className='input-set--top'>
         <label>
           <p>
-            {label || "First Name"} {!optional && "*"}
+            {label} {!optional && label && "*"}
           </p>
         </label>
         {info && <InputInfo />}
@@ -40,11 +48,11 @@ const InputSet = ({
         </div> }
       {type === "file" &&
         <div className='input-set--content__file'>
-          <div className="file-name">{value}</div>
-          <button>
-            <input type="file" name={name} />
-            Browse
-          </button>
+          <p className="file-name">{fileName}</p>
+          <div className='file-btn'>
+            <input type="file" name={name} onChange={changeFile} />
+            <SlArrowRight />
+          </div>
         </div>
       }
       <p className='input-set--message'>{message && message}</p>

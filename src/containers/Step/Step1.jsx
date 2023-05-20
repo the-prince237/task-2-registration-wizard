@@ -43,7 +43,7 @@ const Step1 = () => {
       <div className="flexed form-row">
         <InputSet
           label="Password"
-          placeholder={ph+" Your Password"}
+          placeholder={ph+" Password"}
           type="password"
           name="password" 
           value={datas.password}        
