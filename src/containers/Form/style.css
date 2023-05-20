@@ -44,13 +44,9 @@ div.form-wrapper .form-wrapper--header .form-wrapper--header-top{
   opacity: 1;
 }
 
-.form-wrapper--nav-step:first-child .currStep-bg{
-  border-radius: 0 100px 100px 0;
-}
-
 .form-wrapper--nav-step:last-child .currStep-bg {
   border-radius: 100px 0 0 100px;
-}
+} 
 
 .form-wrapper .form-wrapper--nav-step--content{
   display: flex;
