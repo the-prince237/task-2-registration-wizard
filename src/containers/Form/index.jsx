@@ -36,7 +36,7 @@ const Form = () => {
             <div
               onClick={() => goToStep(index)}
               key={`${name}-${index}`}
-              className={`form-wrapper--nav-step ${currentStep === index && "form-wrapper--nav-step__current"}`}
+              className={`form-wrapper--nav-step ${currentStep === index && "form-wrapper--nav-step__current"} ${currentStep >= index && "form-wrapper--nav-step__behind"}`}
             >
               <div className='currStep-bg'></div>
               <div className="form-wrapper--nav-step--content">
