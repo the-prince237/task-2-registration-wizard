@@ -17,14 +17,7 @@ const InputSet = ({
   message
 }) => {
 
-  const { handleChange } = useContext(FormContext)
-  const [fileName, setFileName] = useState("")
-  
-  function changeFile(e) {
-    const _file = e.target.files[0]
-    setFileName(_file.name)
-    handleChange({target: {name, value: fileName}})
-  }
+  const { handleChange, handleChangeFile } = useContext(FormContext)
 
   return (
     <div className='input-set'>
@@ -34,7 +27,7 @@ const InputSet = ({
             {label} {!optional && label && "*"}
           </p>
         </label>
-        {info && <InputInfo />}
+        {info && <InputInfo info={info} />}
       </div>
       {type !== "file" && 
         <div className='input-set--content'>
@@ -48,9 +41,9 @@ const InputSet = ({
         </div> }
       {type === "file" &&
         <div className='input-set--content__file'>
-          <p className="file-name">{fileName}</p>
+          <p className="file-name">{value}</p>
           <div className='file-btn'>
-            <input type="file" name={name} onChange={changeFile} />
+            <input type="file" name={name} onChange={handleChangeFile} />
             <SlArrowRight />
           </div>
         </div>

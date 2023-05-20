@@ -23,7 +23,10 @@ const Step2 = () => {
           />
           <InputSet
             label="Brand Type"
-            info
+            info={[
+              "Local: Brands with distribution in 3 divisions or less OR multiple divisions but total of 150 stores or less.",
+              "National: Brands with distribution in 4 or more divisions or in more than 150 stores."
+            ]}
             placeholder={ph+" Brand Type"}
             name="brandType"
             value={datas.brandType}       
@@ -33,8 +36,8 @@ const Step2 = () => {
           <InputSet
             label="Street Address"
             placeholder={ph+" Street Address"}
-            name="streeAddress"
-            value={datas.streeAddress}       
+            name="streetAddress"
+            value={datas.streetAddress}       
           />
           <InputSet
             label="City"

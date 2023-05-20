@@ -6,6 +6,7 @@ const Step3 = () => {
   const { submit, datas } = useContext(FormContext)
   const [submited, setSubmited] = useState("")
   function handleClick() {
+    submit()
     setSubmited(JSON.stringify(datas))
   }
 

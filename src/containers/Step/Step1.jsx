@@ -52,7 +52,7 @@ const Step1 = () => {
           label="Confirm password"
           placeholder="Confirm Password"
           type="password"
-          name="password"
+          name="confirmPassword"
           value={datas.confirmPassword} 
         />
       </div>
