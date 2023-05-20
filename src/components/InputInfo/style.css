@@ -101,3 +101,14 @@
     left: 50px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .input-info div {
+    width: 200px;
+    left: -75px;
+  }
+  
+  .input-info div span {
+    left: 75px;
+  }
+}
