@@ -187,3 +187,9 @@ div.form-wrapper .form-wrapper--header .form-wrapper--header-top{
     display: none;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .form-wrapper {
+    border-radius: 0;
+  }
+}
